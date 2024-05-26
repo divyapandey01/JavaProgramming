@@ -14,7 +14,7 @@ public class PrimeNumber {
         System.out.println(a+ " is a prime number");
 //efficient method----
 
-        for(int i= 2; i*i<a; i++) {
+        for(int i= 2; i*i<=a; i++) {
             if(a%i == 0) {
                 System.out.println(a+ " is a not prime number");
                 return;
