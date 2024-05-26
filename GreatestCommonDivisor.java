@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class GreatestCommonDivisor {
     public static void main (String[] args) {
-        Scanner a = new Scanner(System.in);
-        Scanner b = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter first number");
-        int x = a.nextInt();
+        int x = sc.nextInt();
         System.out.println("Enter second number");
-        int y = b.nextInt();
+        int y = sc.nextInt();
         int res = 0;
         int z =0;
         int k= 0;
@@ -22,16 +22,14 @@ public class GreatestCommonDivisor {
             }
         }
         System.out.println("Largest number divisible by both a and b is:" + k);
-        GreatestCommonDivisor gd = new GreatestCommonDivisor();
-        gd.EucleadianMethodForGCD();
+        EucleadianMethodForGCD();
     }
-    public void EucleadianMethodForGCD() {
-        Scanner a = new Scanner(System.in);
-        Scanner b = new Scanner(System.in);
+    public static void EucleadianMethodForGCD() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter first number EGCD");
-        int x = a.nextInt();
+        int x = sc.nextInt();
         System.out.println("Enter second number EGCD");
-        int y = b.nextInt();
+        int y = sc.nextInt();
 
         while(x!= y) {
             if(x>y) {
