@@ -14,7 +14,7 @@ public class AllDivisorsOfNumber {
         int i;
 //EfficientMethod:
         System.out.println("efficient method to print all the divisors:");
-        for(i=1; i*i<=n; i++) {//1to root
+        for(i=1; i*i<n; i++) {//1to root
             if(n%i == 0) {
                 System.out.println(i);
             }
